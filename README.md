@@ -1,6 +1,9 @@
 # BleBox-TempSensor-reader
 Reads and prints information from [BleBox TempSensor](https://blebox.eu/produkt/tempsensor/)
 
+## Configuration
+Set tempSensor IP address in main.py, variable `tempSensorIpAddress`.
+
 ## Usage
 ```bash
 python3 main.py
