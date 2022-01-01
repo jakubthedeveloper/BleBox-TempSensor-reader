@@ -27,9 +27,8 @@ availableFv: None
   ---------------
   type: temperature
   id: 0
-  value: 5187
-  trend: 3
-  state: 2
-  elapsedTimeS: 3
-
+  value: 51.68°
+  trend: ➚
+  state: Active data
+  elapsedTimeS: 1
 ```

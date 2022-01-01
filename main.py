@@ -47,6 +47,31 @@ for sensorKey in sensors:
 
   for sensor in sensors[sensorKey]:
     for key in sensor:
-      print("  " + key + ": " + str(sensor.get(key)))
+      value = sensor.get(key)
+      if key == "trend":
+        if value == 0:
+          value = "No data"
+        elif value == 1:
+          value = "➙"
+        elif value == 2:
+          value = " ➘"
+        elif value == 3:
+          value = "➚"      
+      elif sensor.get("type") == "temperature" and key == "value":
+        value = str(value / 100) + "°"
+      elif key == "state":
+        if value == 1:
+          value = "Measurement in progress"
+        elif value == 2:
+          value = "Active data"
+        elif value == 3:
+          value = "Error"
+        else:
+          value = "Unknown"
+      else:      
+        value = str(value)
+      
+      print("  " + key + ": " + value)
     print("")
   sensorNumber += 1
+
