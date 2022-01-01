@@ -2,14 +2,34 @@
 Reads and prints information from [BleBox TempSensor](https://blebox.eu/produkt/tempsensor/)
 
 ## Usage
+```bash
 python3 main.py
+```
 
 ## Example output
 ```
-type: temperature
-id: 0
-value: 5231
-trend: 3
-state: 2
-elapsedTimeS: 0
+------------
+|  Device  |
+------------
+deviceName: My tempSensor
+type: tempSensor
+product: tempSensor
+hv: 1.1
+fv: 0.1016
+universe: 0
+apiLevel: 20210118
+id: fa21bb5ad246
+ip: 192.168.1.139
+availableFv: None
+
+  ---------------
+  |  Sensor #1  |
+  ---------------
+  type: temperature
+  id: 0
+  value: 5187
+  trend: 3
+  state: 2
+  elapsedTimeS: 3
+
 ```
